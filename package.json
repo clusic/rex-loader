@@ -1,0 +1,26 @@
+{
+  "name": "@clusic/rex-loader",
+  "version": "1.0.0",
+  "description": "The loader of rex",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/clusic/rex-loader.git"
+  },
+  "keywords": [
+    "loader"
+  ],
+  "author": "cevio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clusic/rex-loader/issues"
+  },
+  "homepage": "https://github.com/clusic/rex-loader#readme",
+  "dependencies": {
+    "is-type-of": "^1.2.1",
+    "globby": "^8.0.1",
+    "@clusic/utils": "^1.0.0"
+  }
+}
