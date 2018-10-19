@@ -1,18 +1,12 @@
 const FileLoader = require('./lib/file-loader');
 const Controller = require('./lib/controller');
+const Middleware = require('./lib/middleware');
+const Service = require('./lib/service');
 
 const [dirs, compilers] = [
   Symbol('MvcLoader#dirs'),
   Symbol('MvcLoader#compilers')
 ];
-
-// const BabelRegister = require("babel-register");
-//
-// BabelRegister({
-//   only: [/app\/controller\//],
-//   extensions: [".js", ".mjs"],
-//   cache: true
-// });
 
 module.exports = class MvcLoader {
   constructor() {
@@ -26,6 +20,14 @@ module.exports = class MvcLoader {
   
   static get Controller() {
     return Controller;
+  }
+  
+  static get Middleware() {
+    return Middleware;
+  }
+  
+  static get Service() {
+    return Service;
   }
   
   addCompiler(compiler) {
