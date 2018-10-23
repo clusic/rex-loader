@@ -1,6 +1,6 @@
 {
   "name": "@clusic/rex-loader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The loader of rex",
   "scripts": {
     "test": "node test/index.js"
